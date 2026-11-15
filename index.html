@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Защита переднего и заднего бамперов для JAC T9 и Haval H3. Зеркальная нержавеющая сталь и чёрное порошковое покрытие.">
+  <title>Гранфорт — защита бамперов для JAC T9 и Haval H3</title>
+  <link rel="icon" type="image/svg+xml" href="assets/granfort-mark.svg">
+  <link rel="stylesheet" href="style.css?v=9">
+  <script defer src="app.js?v=pages1"></script>
+</head>
+<body id="top">
+  <header class="site-header shell">
+    <a class="brand" href="#top">
+      <img class="brand-mark" src="assets/granfort-mark.svg" width="68" height="42" alt="">
+      <span><span class="brand-name">Гранфорт</span><small>Подбор комплектов</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Разделы сайта">
+      <a href="#models">Комплекты</a>
+      <a href="#materials">Материалы</a>
+      <a href="#custom">На заказ</a>
+    </nav>
+    <button class="button button-small button-outline" type="button" data-open-request aria-haspopup="dialog" aria-controls="contact">Запрос цены <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="hero-kicker">Там, где кончается асфальт</p>
+        <h1 id="page-title">Защита бамперов для&nbsp;4×4</h1>
+        <p>Передняя и задняя защита для <strong>JAC T9</strong> и <strong>Haval H3</strong>.</p>
+        <a class="button button-accent" href="#models">Подобрать комплект <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-photo">
+        <picture>
+          <source media="(max-width: 600px)" srcset="assets/hero-road-mobile.webp">
+          <img src="assets/hero-road.webp" width="1440" height="960" fetchpriority="high" alt="Синий пикап с полированной защитой бампера на горной гравийной дороге">
+        </picture>
+      </figure>
+    </section>
+
+    <section id="models" class="section">
+      <div class="section-heading">
+        <h2>Подбор защиты</h2>
+        <p>Выберите автомобиль и исполнение.</p>
+      </div>
+      <div class="model-tabs" role="tablist" aria-label="Модель автомобиля">
+        <button type="button" id="tab-jac" role="tab" aria-selected="true" aria-controls="product" data-model="jac" data-label="JAC T9">
+          <span><strong>JAC T9</strong><small>Пикап</small></span>
+          <span class="tab-indicator" aria-hidden="true"></span>
+        </button>
+        <button type="button" id="tab-haval" role="tab" aria-selected="false" aria-controls="product" tabindex="-1" data-model="haval" data-label="Haval H3">
+          <span><strong>Haval H3</strong><small>Внедорожник</small></span>
+          <span class="tab-indicator" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div id="product" class="product" role="tabpanel" aria-labelledby="tab-jac">
+        <div class="product-media">
+          <figure class="product-photo">
+            <img id="model-photo" src="assets/catalog-jac-steel-front.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Передняя защита JAC T9 в зеркальной стали">
+            <p id="gallery-status" class="gallery-status" role="status" hidden></p>
+          </figure>
+          <div class="gallery-views" role="group" aria-label="Ракурс защиты">
+            <button type="button" aria-pressed="true" aria-controls="model-photo" data-view="front">Спереди</button>
+            <button type="button" aria-pressed="false" aria-controls="model-photo" data-view="rear">Сзади</button>
+          </div>
+          <fieldset class="finishes">
+            <legend>Исполнение</legend>
+            <button type="button" aria-pressed="true" data-finish="steel" data-label="Зеркальная сталь" data-detail="Нержавеющая сталь AISI 304 с зеркальной полировкой.">
+              <span class="finish-swatch chrome" aria-hidden="true"></span> Зеркальная сталь
+            </button>
+            <button type="button" aria-pressed="false" data-finish="black" data-label="Чёрное покрытие" data-detail="Чёрный металл с порошковым покрытием. Доступность для выбранной модели уточняется.">
+              <span class="finish-swatch powder" aria-hidden="true"></span> Чёрное покрытие
+            </button>
+          </fieldset>
+        </div>
+        <div class="product-copy">
+          <h3 id="model-name">JAC T9</h3>
+          <p class="finish-info" id="finish-info" aria-live="polite">Нержавеющая сталь AISI 304 с зеркальной полировкой.</p>
+          <dl class="kit-details">
+            <div><dt>Что защищаем</dt><dd>Передний и задний бамперы</dd></div>
+            <div><dt>Совместимость</dt><dd>Уточните год выпуска, крепление и совместимость с парктрониками и фаркопом</dd></div>
+            <div><dt>Состав поставки</dt><dd>Комплектация и крепёж уточняются по артикулу</dd></div>
+            <div><dt>Пример ЮКО, полировка</dt><dd id="manufacturer-article">JAC.T9.21.02</dd></div>
+          </dl>
+          <p class="catalog-note">Внешний вид и крепления сверяйте по каталогу производителя.</p>
+          <p><a class="manufacturer-link" id="manufacturer-model" href="https://www.ukk-tuning.ru/brands/jact6/t9-2021" target="_blank" rel="noopener">Фото изделий в каталоге ЮКО <span aria-hidden="true">↗</span></a></p>
+          <button id="pick" class="button button-navy" type="button" aria-haspopup="dialog" aria-controls="contact">Подготовить запрос цены <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials" class="section materials">
+      <div class="section-heading">
+        <h2>Сталь в двух исполнениях</h2>
+      </div>
+      <div class="material-layout">
+        <figure class="material-photo">
+          <img src="assets/material.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Зеркальная и чёрная трубы на рабочей поверхности">
+        </figure>
+        <div class="material-options">
+          <article class="material-card steel">
+            <span class="finish-swatch chrome" aria-hidden="true"></span>
+            <h3>Зеркальная полировка</h3>
+            <p>Нержавеющая сталь <strong>AISI 304</strong>. Гладкая блестящая поверхность подчёркивает форму детали.</p>
+          </article>
+          <article class="material-card black">
+            <span class="finish-swatch powder" aria-hidden="true"></span>
+            <h3>Чёрное покрытие</h3>
+            <p>Чёрный металл с матовым порошковым покрытием.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="custom" class="section custom">
+      <h2>У вас другая модель?</h2>
+      <div>
+        <p>Укажите марку и модель, чтобы уточнить возможность изготовления защиты под ваш автомобиль.</p>
+        <button id="custom-pick" class="button button-outline" type="button" aria-haspopup="dialog" aria-controls="contact">Подготовить запрос на изготовление <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section steps">
+      <h2>Узнать цену</h2>
+      <ol>
+        <li><h3>Выберите комплект</h3><p>Укажите модель автомобиля и исполнение защиты.</p></li>
+        <li><h3>Подготовьте запрос</h3><p>Добавьте год выпуска и пожелания по установке или доставке.</p></li>
+        <li><h3>Свяжитесь с производителем</h3><p>Скопируйте запрос или откройте черновик письма.</p></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <dialog id="contact" class="contact" aria-labelledby="request-title">
+    <div class="contact-header">
+      <h2 id="request-title">Запрос цены</h2>
+      <button id="close-request" class="contact-close" type="button" aria-label="Закрыть запрос цены" autofocus>×</button>
+    </div>
+    <div class="contact-content">
+      <p>Выберите автомобиль и исполнение, чтобы подготовить запрос производителю.</p>
+      <form id="request">
+        <div class="form-grid">
+          <label for="car">Автомобиль
+            <select id="car">
+              <option value="jac">JAC T9</option>
+              <option value="haval">Haval H3</option>
+              <option value="other">Другая модель</option>
+            </select>
+          </label>
+          <label for="form-finish">Исполнение
+            <select id="form-finish">
+              <option value="steel">Зеркальная сталь</option>
+              <option value="black">Чёрное покрытие</option>
+              <option value="unsure">Нужно подобрать</option>
+            </select>
+          </label>
+        </div>
+        <p class="form-note" id="form-reference" hidden></p>
+        <label for="other-model" class="form-other" hidden>Марка и модель
+          <input id="other-model" type="text" placeholder="Например, Tank 300" maxlength="100" autocomplete="off" disabled>
+        </label>
+        <label for="car-year">Год выпуска (необязательно)
+          <input id="car-year" type="text" inputmode="numeric" pattern="[12][0-9]{3}" maxlength="4" title="Укажите год четырьмя цифрами" placeholder="Например, 2024">
+        </label>
+        <label for="message">Комментарий
+          <textarea id="message" rows="3" maxlength="1500" placeholder="Комплектация автомобиля, установка или доставка"></textarea>
+        </label>
+        <button id="prepare-request" class="button button-accent" type="submit" disabled>Подготовить запрос</button>
+        <noscript><p class="form-note">Включите JavaScript, чтобы подготовить запрос.</p></noscript>
+        <section class="form-result" id="result" aria-labelledby="result-title" hidden>
+          <label id="result-title" for="request-text">Готовый текст запроса</label>
+          <textarea id="request-text" rows="6" readonly></textarea>
+          <div class="result-actions">
+            <button type="button" class="button button-navy" id="save-request" hidden>Сохранить в базе</button>
+            <button type="button" class="button button-accent" id="copy-request">Скопировать текст</button>
+            <a class="button button-outline" id="email-request">Открыть черновик письма в ЮКО</a>
+            <button type="button" class="button button-outline" id="share-request" hidden>Поделиться</button>
+          </div>
+          <p class="form-feedback" id="save-feedback" role="status"></p>
+          <p class="form-feedback" id="request-feedback" role="status"></p>
+          <p class="form-feedback" id="draft-note" hidden>Скопируйте полный запрос и вставьте его в письмо.</p>
+        </section>
+      </form>
+      <p class="form-contact"><a href="https://uko-tuning.ru/contacts" target="_blank" rel="noopener">Контакты производителя ЮКО <span aria-hidden="true">↗</span></a></p>
+    </div>
+  </dialog>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <div class="footer-identity">
+          <a class="brand footer-brand" href="#top">
+            <img class="brand-mark" src="assets/granfort-mark.svg" width="46" height="46" alt="">
+            <span class="brand-name">Гранфорт</span>
+          </a>
+          <p>Подбор защиты переднего и заднего бамперов для внедорожников и пикапов.</p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-nav-title">
+          <h2 id="footer-nav-title">Каталог</h2>
+          <ul>
+            <li><a href="#models">Подбор защиты</a></li>
+            <li><a href="#materials">Материалы</a></li>
+            <li><a href="#custom">Защита под другую модель</a></li>
+          </ul>
+        </nav>
+        <div class="footer-actions">
+          <h2>Цена и совместимость</h2>
+          <button class="button button-accent" type="button" data-open-request aria-haspopup="dialog" aria-controls="contact">Подготовить запрос <span aria-hidden="true">↗</span></button>
+          <a class="footer-supplier" href="https://uko-tuning.ru/contacts" target="_blank" rel="noopener">Контакты производителя ЮКО <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Гранфорт</span>
+        <div>
+          <a href="references.html">Материалы проекта</a>
+          <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
